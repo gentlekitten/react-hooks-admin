@@ -1,0 +1,178 @@
+// @import "antd/dist/antd.less";
+
+/* 自定义 antd 默认样式 */
+@light-bg-color: #ffffff;
+@light-main-bg-color: #f0f2f5;
+@light-border-color: #e4e7ed;
+@light-border-header-color: #f6f6f6;
+@light-text-color: rgba(0, 0, 0, 0.85);
+@light-shadow-color: 0 0 12px #0000000d;
+@light-scrollbar-bg-color: #dddee0;
+
+/* 需要自定义覆盖的样式 */
+body {
+  background-color: @light-bg-color !important;
+  #driver-highlighted-element-stage {
+    background-color: #fff !important;
+  }
+}
+
+/* login container（先固定样式） */
+.login-container {
+  background-color: #eeeeee !important;
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    .login-form {
+      background-color: transparent !important;
+      box-shadow: 2px 3px 7px #0003 !important;
+      .login-logo {
+        .logo-text {
+          color: #475768 !important;
+        }
+      }
+      .login-btn {
+        .ant-btn-default {
+          color: #606266 !important;
+        }
+      }
+    }
+  }
+}
+.ant-input-affix-wrapper,
+.ant-input {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: @light-border-color;
+}
+.ant-input-prefix {
+  color: #bfbfbf !important;
+}
+input::placeholder {
+  color: #bfbfbf !important;
+}
+.ant-btn-default {
+  background-color: @light-bg-color !important;
+  border-color: @light-border-color;
+}
+
+/* container */
+.container {
+  /* sider */
+  .ant-layout-sider {
+    border-right: 1px solid @light-border-color !important;
+    .ant-menu {
+      &::-webkit-scrollbar {
+        background-color: #001529 !important;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #41444b !important;
+      }
+    }
+    .logo-box {
+      border-bottom: 1px solid #010b14 !important;
+    }
+  }
+
+  /* layout */
+  .ant-layout {
+    background-color: @light-main-bg-color !important;
+    .tabs,
+    .footer,
+    .card {
+      background-color: @light-bg-color !important;
+      border-color: @light-border-color !important;
+    }
+    .ant-layout-header {
+      height: 55px;
+      padding: 0 40px 0 20px;
+      background-color: @light-bg-color !important;
+      border-color: @light-border-header-color !important;
+      .icon-style,
+      .username {
+        color: @light-text-color !important;
+      }
+    }
+    .footer {
+      a {
+        color: @light-text-color !important;
+      }
+    }
+    .card {
+      box-shadow: @light-shadow-color !important;
+      .text {
+        color: #585858 !important;
+      }
+    }
+    .ant-layout-content {
+      &::-webkit-scrollbar {
+        background-color: @light-main-bg-color !important;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: @light-scrollbar-bg-color !important;
+      }
+      .card {
+        &::-webkit-scrollbar {
+          background-color: @light-bg-color !important;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: @light-scrollbar-bg-color !important;
+        }
+      }
+    }
+  }
+}
+// 侧边栏
+.ant-layout-sider,
+.ant-menu {
+  background-color: #001529 !important;
+}
+.ant-menu-sub {
+  background-color: #000c17 !important;
+}
+.ant-layout-content {
+  background-color: @light-bg-color !important;
+  color: @light-text-color;
+}
+// 展开图标
+.anticon-menu-fold,
+.anticon-menu-unfold {
+  color: @light-text-color;
+}
+// 面包屑
+// .breadcrumb-span {
+//   color: #000 !important;
+// }
+// .ant-breadcrumb {
+//   color: red !important;
+// }
+.breadcrumb-span:hover {
+  color: #000 !important;
+}
+// 下拉菜单
+.ant-dropdown-menu {
+  background-color: @light-bg-color !important;
+}
+.ant-dropdown .ant-dropdown-arrow::before {
+  background-color: @light-bg-color !important;
+}
+.dropdown-button,
+.ant-dropdown-menu-item {
+  color: @light-text-color !important;
+}
+.dropdown-button:hover,
+.ant-dropdown-menu-item:hover {
+  background-color: #f5f5f5 !important;
+}
+//
+.ant-modal-content,
+.ant-modal-header {
+  background-color: @light-bg-color !important;
+  color: @light-text-color !important;
+}
+.ant-modal .ant-modal-title {
+  color: @light-text-color !important;
+}
+.ant-modal-confirm-title,
+.ant-modal-confirm-content {
+  color: @light-text-color !important;
+}
